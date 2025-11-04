@@ -40,7 +40,7 @@ Local Storage API – for persistent data
 Frontend Mentor Design – for layout reference
 
 ## 📸 Screenshots
- ![App Screenshot](./images/to-do-app-main.png) 
+ ![App Screenshot](./design/desktop-preview.jpg) 
 
 📚 What I Learned
 
