@@ -1,0 +1,242 @@
+:root {
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --Light-Grayish-Blue: hsl(233, 11%, 84%);
+  --bg-Very-Dark-Blue: hsl(235, 21%, 11%);
+  --bg-Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+  --Bright-Blue: hsl(220, 98%, 61%);
+  --Dark-Grayish-Blue: hsl(236, 9%, 61%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 0;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+  background-image: url(./images/bg-desktop-light.jpg);
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-position: center top -6rem;
+  background-color: rgb(212, 212, 212);
+  color: var(--Very-Light-Gray);
+}
+@media (max-width: 332px) {
+  body {
+    background-image: url(./images/bg-mobile-light.jpg);
+    background-position: center top 0rem;
+  }
+}
+
+body.darkMode {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+  background-image: url(./images/bg-desktop-dark.jpg), linear-gradient(black);
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-position: center top -6rem;
+  background-color: black;
+  color: var(--Very-Light-Gray);
+}
+@media (max-width: 332px) {
+  body.darkMode {
+    background-image: url(./images/bg-mobile-dark.jpg), linear-gradient(black);
+    background-position: center top 0rem;
+  }
+}
+
+.Header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 1.2rem 0.3rem;
+}
+
+h1 {
+  color: white;
+}
+
+.TaskSearchBar__input {
+  color: #373535;
+  padding: 0.6rem 5.2rem;
+  border-radius: 0.2rem;
+  margin-bottom: 3.2rem;
+  border: none;
+}
+@media (max-width: 332px) {
+  .TaskSearchBar__input {
+    padding: 0.6rem 4.6rem;
+  }
+}
+
+.App__wrapper {
+  position: relative;
+}
+
+/* ========= DARK MODE ========= */
+.darkMode .TaskSearchBar__input,
+.darkMode .contact {
+  background-color: var(--bg-Very-Dark-Grayish-Blue);
+  color: hsl(240, 3%, 93.5%);
+  box-shadow: none;
+}
+
+.darkMode .TaskList {
+  background-color: var(--bg-Very-Dark-Grayish-Blue);
+  box-shadow: none;
+}
+
+.darkMode .TaskList__link {
+  color: hsl(240, 3%, 93.5%);
+}
+
+.darkMode .TaskList__list--taskContent {
+  color: #dfd7d7;
+}
+
+.darkMode .TaskList__list--checkbox {
+  background-color: var(--bg-Very-Dark-Grayish-Blue);
+}
+
+/* ========= TASK LIST ========= */
+.TaskList {
+  background-color: white;
+  color: var(--Light-Grayish-Blue);
+  box-shadow: -0.3rem 0.3rem 1rem #c7baba;
+  border-radius: 0.2rem;
+  z-index: 1;
+}
+
+.TaskList__list {
+  padding: 0.3rem 0;
+  list-style: none;
+  max-width: 20rem;
+}
+
+.TaskList__list--checkbox {
+  background-color: var(--Very-Light-Gray);
+  border-radius: 1rem;
+  padding: 0.2rem;
+  border: 0.1rem solid #b7a6a6;
+}
+
+.TaskList__list--checkboxImg {
+  opacity: 0;
+  visibility: hidden;
+  user-select: none;
+}
+
+.TaskList__list--deletIcon {
+  width: 0.6rem;
+}
+
+.TaskList__list--taskContent {
+  display: flex;
+  justify-content: space-between;
+  color: #423f3f;
+  margin: 9px auto 0.4rem;
+  border-bottom: 0.1rem solid #787373;
+  padding: 0.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.TaskList__list--taskContent--isActive {
+  text-decoration: line-through;
+  color: var(--Dark-Grayish-Blue);
+}
+
+.TaskList__list--taskContent--isActive .TaskList__list--checkbox {
+  background-color: #8b7aff;
+}
+
+.TaskList__list--taskContent--isActive .TaskList__list--checkboxImg {
+  opacity: 1;
+  visibility: visible;
+}
+
+.TaskList__list--ValueContent {
+  padding-right: 9rem;
+  max-width: 16rem;
+}
+@media (max-width: 332px) {
+  .TaskList__list--ValueContent {
+    padding-right: 6rem;
+  }
+}
+
+.TaskList__link {
+  display: flex;
+  gap: 2.6rem;
+  font-size: 0.7rem;
+  color: var(--Dark-Grayish-Blue);
+  padding: 1rem 0.2rem;
+  cursor: pointer;
+}
+@media (max-width: 332px) {
+  .TaskList__link {
+    justify-content: space-between;
+  }
+}
+
+/* ========= CONTACTS ========= */
+.contacts {
+  display: flex;
+  gap: 0.7rem;
+  cursor: pointer;
+}
+@media (max-width: 332px) {
+  .contacts {
+    display: none;
+  }
+}
+
+.contac {
+  display: none;
+}
+@media (max-width: 332px) {
+  .contac {
+    display: flex;
+    gap: 0.7rem;
+    font-size: 0.7rem;
+    color: var(--Dark-Grayish-Blue);
+    justify-content: center;
+    cursor: pointer;
+  }
+}
+
+.contact {
+  display: none;
+}
+@media (max-width: 332px) {
+  .contact {
+    display: block;
+    margin-top: 1rem;
+    background-color: white;
+    color: var(--Light-Grayish-Blue);
+    box-shadow: -0.3rem 0.3rem 1rem #c7baba;
+    border-radius: 0.2rem;
+    padding: 1rem;
+  }
+}
+
+/* ========= FOOTER ========= */
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: var(--Dark-Grayish-Blue);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=styles.css.map */
