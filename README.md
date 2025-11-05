@@ -6,6 +6,9 @@ This project was completed as part of a Frontend Mentor Challenge to enhance fro
 ## 🔗 Live Demo: 
 [View on Vercel](https://todo-app-main-kappa-lime.vercel.app/)
 
+## 📸 Screenshots
+ ![App Screenshot](./design/desktop-preview.jpg) 
+ 
 ## 📁 Challenge Source: 
 
 Frontend Mentor
@@ -42,9 +45,6 @@ Frontend Mentor
    Local Storage API – for persistent data
 
    Frontend Mentor Design – for layout reference
-
-## 📸 Screenshots
- ![App Screenshot](./design/desktop-preview.jpg) 
 
 ##  📚 What I Learned
 
