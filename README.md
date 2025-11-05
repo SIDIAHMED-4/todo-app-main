@@ -1,48 +1,52 @@
-📝 Todo App
+## 📝 Todo App
 
 A clean, responsive, and fully functional Todo Application built using HTML, SCSS, and JavaScript.
 This project was completed as part of a Frontend Mentor Challenge to enhance front-end development skills and practice DOM manipulation, state management, and responsive design.
 
-🔗 Live Demo: View on Vercel
+## 🔗 Live Demo: 
+[View on Vercel](https://todo-app-main-kappa-lime.vercel.app/)
 
-📁 Challenge Source: Frontend Mentor
+## 📁 Challenge Source: 
 
-🚀 Features
+Frontend Mentor
 
-✅ Add new todos
 
-✏️ Mark todos as complete
+## 🚀 Features
 
-❌ Delete todos
+    ✅ Add new todos
 
-🔍 Filter todos by: All / Active / Completed
+    ✏️ Mark todos as complete
 
-🧹 Clear all completed todos
+    ❌ Delete todos
 
-🌗 Toggle between Light and Dark mode
+    🔍 Filter todos by: All / Active / Completed
 
-💾 Save todos in Local Storage (data remains after page reload)
+    🧹 Clear all completed todos
 
-📱 Fully responsive design for all screen sizes
+    🌗 Toggle between Light and Dark mode
 
-🎨 Built with SCSS for clean and maintainable styling
+    💾 Save todos in Local Storage (data remains after page reload)
 
-🛠️ Built With
+    📱 Fully responsive design for all screen sizes
 
-HTML5 – for semantic structure
+    🎨 Built with SCSS for clean and maintainable styling
 
-SCSS – for modular and elegant styling
+## 🛠️ Built With
 
-JavaScript (ES6) – for interactivity and logic
+   HTML5 – for semantic structure
 
-Local Storage API – for persistent data
+   SCSS – for modular and elegant styling
 
-Frontend Mentor Design – for layout reference
+   JavaScript (ES6) – for interactivity and logic
+
+   Local Storage API – for persistent data
+
+   Frontend Mentor Design – for layout reference
 
 ## 📸 Screenshots
  ![App Screenshot](./design/desktop-preview.jpg) 
 
-📚 What I Learned
+##  📚 What I Learned
 
 During this project, I learned how to:
 
@@ -56,11 +60,11 @@ Write cleaner and more reusable JavaScript code
 
 Make a responsive and interactive user interface
 
-⚙️ Setup & Installation
+## ⚙️ Setup & Installation
 
 1. Clone this repository:
 
-git clone https://github.com/yourusername/todo-app.git
+git clone https://github.com/SIDIAHMED-4/todo-app-main.git
 
 
 2. Navigate to the project folder:
@@ -75,7 +79,7 @@ sass styles.scss styles.css
 
 4. Open index.html in your browser.
 
-💡 Future Improvements
+##  💡 Future Improvements
 
 Add drag-and-drop functionality for reordering tasks
 
@@ -83,12 +87,12 @@ Sync todos with a real backend
 
 Add animations for task transitions
 
-🧑‍💻 Author
+##  🧑‍💻 Author
 
 Sidi Ahmed
 🌐 Frontend Mentor Profile
 
-🐙 GitHub
+🐙 GitHub (https://github.com/SIDIAHMED-4)
 
 🏆 Acknowledgments
 
